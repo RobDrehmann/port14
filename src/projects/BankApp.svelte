@@ -246,7 +246,7 @@ import arrows from '../assets/arrows.png'
   <div class="coverprojecttitle"></div>
   <div class="buttonsTop">
     <button ><a href="https://bank-e4204.web.app/">Project</a></button>
-    <button>Code</button>
+    <button><a href="https://github.com/RobDrehmann/bank">Code</a></button>
     </div>
   <div  class="seperator3"></div>
   {#if y > 300}

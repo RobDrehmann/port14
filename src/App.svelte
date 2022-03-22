@@ -249,14 +249,19 @@ try {
       </div>
       <div class="navbar-icons">
       
-      <div class=navbar-icon>
-        <img src={git} alt="failed" />
+      <div  class=navbar-icon>
+        <a href="https://github.com/RobDrehmann">
+        <img src={git} alt="failed" /></a>
       </div>
       <div class=navbar-icon>
+        <a href="https://github.com/RobDrehmann">
         <img src={twiiter} alt="failed" />
+        </a>
       </div>
       <div class=navbar-icon>
+        <a href="https://github.com/RobDrehmann">
         <img src={linked} alt="failed" />
+        </a>
       </div>
     </div>
     
@@ -479,10 +484,12 @@ try {
         <div id="programcover2" class="programcover"></div>
         {/if}
         <h3>Queue</h3>
+        <a href="https://github.com/RobDrehmann/Queue">
         <div class="programcard">
           <img src={queue} />
         </div>
-        <span>Description of program that should be about as long as a sentence</span>
+      </a>
+        <span>Creates a Queue using Linked List Implementation.</span>
       </div>   
     </div>
     <div class="programrow">
@@ -493,8 +500,8 @@ try {
         <div id="programcover2" class="programcover"></div>
         {/if}
         <h3>Stack</h3>
-        <div class="programcard"> <img src={stack} /></div>
-        <span>Description of program that should be about as long as a sentence</span>
+        <a href="https://github.com/RobDrehmann/Stack"><div class="programcard"> <img src={stack} /></div></a>
+        <span>Creates a Stack using array implementation. </span>
       </div>   
     </div>
     <div class="programrow">
@@ -505,10 +512,11 @@ try {
         <div id="programcover2" class="programcover"></div>
         {/if}
         <h3>Parallelism</h3>
-        <div class="programcard">
+        <a href="https://github.com/RobDrehmann/Parallelism"><div class="programcard">
           <img src={parallel} />
         </div>
-        <span>Description of program that should be about as long as a sentence</span>
+      </a>
+        <span>Finds the number of prime numbers between two numbers using parallelism.</span>
       </div>   
     </div>
     <div class="programrow">
@@ -519,10 +527,12 @@ try {
         <div id="programcover2" class="programcover"></div>
         {/if}
         <h3>Hash-Table</h3>
+        <a href="https://github.com/RobDrehmann/Hash-Table">
         <div class="programcard">
           <img src={hash} />
         </div>
-        <span>Description of program that should be about as long as a sentence</span>
+      </a>
+        <span>Creates a Hash-Table.</span>
       </div>   
     </div>
     <div class="programrow">   
@@ -532,11 +542,14 @@ try {
         {:else}
         <div id="programcover2" class="programcover"></div>
         {/if}
+        
         <h3>Dijkstras</h3>
+        <a href="https://github.com/RobDrehmann/dijkstras">
         <div class="programcard">
           <img src={graph} />
         </div>
-        <span>Description of program that should be about as long as a sentence</span>
+      </a>
+        <span>Creates a weighted directed graph and uses Dijkstra's Algorithm to find the shortest paths.</span>
       </div>   
     </div>
     <div class="programrow">
@@ -547,10 +560,12 @@ try {
         <div id="programcover2" class="programcover"></div>
         {/if}
         <h3>Conways-Game-of-Life</h3>
+        <a href="https://github.com/RobDrehmann/Conways-Game-of-Life">
         <div class="programcard">
           <img src={conways} />
         </div>
-        <span>Description of program that should be about as long as a sentence</span>
+      </a>
+        <span>Creates a unique recreation of Conway's Game of life.</span>
       </div>
     </div>
     <div class="programrow">
@@ -561,10 +576,12 @@ try {
         <div id="programcover2" class="programcover"></div>
         {/if}
         <h3>Binary-Tree</h3>
+        <a href="https://github.com/RobDrehmann/Binary-Tree">
         <div class="programcard">
           <img src={binary} />
         </div>
-        <span>Description of program that should be about as long as a sentence</span>
+      </a>
+        <span>Creates a Binary Tree.</span>
       </div>
     </div>
     <div class="programrow">
@@ -575,10 +592,12 @@ try {
         <div id="programcover2" class="programcover"></div>
         {/if}
         <h3>Tik-Tak-Toe</h3>
+        
         <div class="programcard">
           <img src={tiktaktoe} />
         </div>
-        <span>Description of program that should be about as long as a sentence</span>
+     
+        <span>Coming Soon!</span>
       </div>
     </div>
     <div class="programrow">
@@ -589,10 +608,12 @@ try {
         <div id="programcover2" class="programcover"></div>
         {/if}
         <h3>Terminal Scedualar</h3>
+        
         <div class="programcard">
           <img src={command} />
         </div>
-        <span>Description of program that should be about as long as a sentence</span>
+      
+        <span>Coming Soon!</span>
       </div>
     </div>
   </div>
@@ -958,6 +979,9 @@ try {
       border-width: 1px;
   
       border-color: white;
+    }
+    a{
+      z-index: 1;
     }
     .contact > textarea{
   
@@ -1456,8 +1480,8 @@ try {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 60vh;
-  justify-content: space-between;
+  height: 40vh;
+  justify-content: space-evenly;
   margin-left: -7em;
   
   }
@@ -1503,7 +1527,7 @@ try {
   -webkit-text-fill-color: transparent;
   
   }
-  .navbar-icon >img{
+  .navbar-icon > a > img{
     height: 6vh;
       width: 6vh;
       left: 0;
@@ -1569,7 +1593,7 @@ try {
       z-index: 0;
      position:fixed;
       background: #313131;
-      height: 50vh;
+      height: 32.2vh;
       width: 7vw;
     }
     .shapes > svg{
