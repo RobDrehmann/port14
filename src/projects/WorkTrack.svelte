@@ -313,7 +313,7 @@ import arrows from '../assets/arrows.png'
   <div  class="seperator3"></div>
   
     
-    
+  
     
 </div>
   
@@ -325,15 +325,16 @@ import arrows from '../assets/arrows.png'
       color: transparent;
     }
     #black{
-      background-color: #292C33;
+    background-color: #292C33;
 
-    }
-    #grey{
-      background-color: #377E22;
-    }
-    #red{
-      background-color: #FF0000;
-    }
+  }
+  #grey{
+    background-color: #377E22;
+  }
+  #red{
+    background-color: #FF0000;
+  }
+    
     
     #bgcasestudy{
       margin-left: 50%;
@@ -341,15 +342,11 @@ import arrows from '../assets/arrows.png'
       transform: translate(-50%);
       font-family: Julius Sans One;
       position: absolute;
-      font-size: 20vh;
+      font-size: 15vw;
       color: grey;
       z-index: 0;
       opacity: .3;
     }
-    a{
-    color: white;
-    text-decoration: none;
-  }
     .technologies > img{
       height: 14vw;
       width: 14vw;
@@ -366,12 +363,38 @@ import arrows from '../assets/arrows.png'
     .technologies{
       margin-bottom: 20vh;
     }
+
+    #backbutton{
+      position: fixed;
+      height: 2vw;
+      width: 2vw;
+
+    }
+    a{
+    color: white;
+    text-decoration: none;
+  }
+    #backbutton:hover{
+      cursor: pointer;
+    }
+    #backbutton > img{
+      height: 4vw;
+      width: 4vw;
+      transition: .5s;
+    }
+    #backbutton:hover > img{
+      
+      transition: .5s;
+      height: 4vw;
+      width: 4vw;
+      transform: rotate(180deg);
+    }
     .colorsingle{
       margin-top: 3vh;
       color: white;
       display: flex;
       width: 70vw;
-      margin-left: 10vw;
+      margin-left: 5vw;
       justify-content: space-between;
     }
     .colorsingle > p{
@@ -389,33 +412,28 @@ import arrows from '../assets/arrows.png'
       font-size: 2vw;
       margin-bottom: 20vh;
     }
-    .animated-title3 {
-      width: 30vw;
-    z-index: 0;
-    color: #767676;
-    font-family: Julius Sans One;
     
-    
-  }
   .coverprojecttitle{
-    height: 12vh;
+    height: 10vw;
     width: 50vw;
+    font-size: 1vw;
     background-color: white;
     margin-left: 25vw;
-    margin-top: -11em;
+    margin-top: -15em;
     animation: showworks 1s;
     animation-delay: 3s;
       animation-fill-mode: forwards;
-      margin-bottom: 20vh;
+      margin-bottom: 15vw;
     
   }
   .coverprojecth2{
     height: 9vh;
-    width: 27vw;
+    width: 32vw;
     background-color: white;
     margin-left: 35vw;
       margin-bottom: 5vh;
-    margin-top: -7em;
+      font-size: 1vw;
+    margin-top: -8em;
     animation: showworks 1s;
     animation-fill-mode: forwards;
   
@@ -426,7 +444,8 @@ import arrows from '../assets/arrows.png'
     background-color: white;
     animation: showprograms2 1s;
     animation-fill-mode: forwards;
-    margin-top: -7em;
+    font-size: 1vw;
+    margin-top: -8em;
     margin-bottom: 5vh;
     margin-left: 35vw;  
   }
@@ -445,49 +464,6 @@ import arrows from '../assets/arrows.png'
     
     
   }
-  .buttonsTop > button{
-    transition: 1s;
-    width: 10vw;
-      height: 5vh;
-      margin-left: .5vw;
-      font-size: 3vh;
-      background: #313131;
-  box-shadow: 14px 14px 40px rgba(16, 16, 18, 0.75), -7px -7px 30px #313131;
-  border: solid;
-  border-color: white;
-  border-radius: 7px;
-  color: white;
-
-  }
-  .buttonsTop > button:hover{
-    transition: 1s;
-    background-color: white;
-    color: #313131;
-    cursor: pointer;
-    transform: scale(1.1, 1.1);
-
-  }
-  #backbutton{
-      position: fixed;
-      height: 2vw;
-      width: 2vw;
-
-    }
-    #backbutton:hover{
-      cursor: pointer;
-    }
-    #backbutton > img{
-      height: 4vw;
-      width: 4vw;
-      transition: .5s;
-    }
-    #backbutton:hover > img{
-      
-      transition: .5s;
-      height: 4vw;
-      width: 4vw;
-      transform: rotate(180deg);
-    }
   .animated-title2 > div div {
     font-size: 7vmin;
     padding: 2vmin 0;
@@ -510,12 +486,34 @@ import arrows from '../assets/arrows.png'
   .animated-title2 > div.text-top div span:first-child {
     color: #fff;
   }
-  .animated-title3 > div {
-    
-    overflow: hidden;
-    
-    
-    
+  
+  .buttonsTop{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+
+  }
+  .buttonsTop > button{
+    transition: 1s;
+    width: 10vw;
+      height: 5vh;
+      margin-left: .5vw;
+      font-size: 1.5vw;
+      background: #313131;
+  box-shadow: 14px 14px 40px rgba(16, 16, 18, 0.75), -7px -7px 30px #313131;
+  border: solid;
+  border-color: white;
+  border-radius: 7px;
+  color: white;
+
+  }
+  .buttonsTop > button:hover{
+    transition: 1s;
+    background-color: white;
+    color: #313131;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+
   }
   .animated-title3 > div div {
     font-size: 7vmin;
@@ -529,13 +527,7 @@ import arrows from '../assets/arrows.png'
    
     
   }
-  .animated-title3 > div.text-top div {
-    animation: showTopText 1s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    bottom: 0;
-    transform: translate(0, 100%);
-  }
+  
   .animated-title3 > div.text-top div span:first-child {
     color: #fff;
   }
@@ -592,6 +584,7 @@ import arrows from '../assets/arrows.png'
   background: linear-gradient(to bottom, #08CFBB 38%, #0685CF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
+  font-size: 4vw;
     }
     .devices > img{
      
@@ -603,12 +596,70 @@ import arrows from '../assets/arrows.png'
       
       
     }
+    @media only screen and (min-width: 900px) {
+      .animated-title3 > div.text-top div {
+    animation: showTopText 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%);
+  }
+      .animated-title3 {
+    width: 30vw;
+    z-index: 0;
+    color: #767676;
+    font-family: Julius Sans One;
+    
+    
+  }
+  .animated-title3 > div {
+    
+    overflow: hidden;
+    
+    
+    
+  }
+    
+    }
+    @media only screen and (max-width: 900px) {
+      .animated-title3 > div.text-top div {
+    
+    bottom: 0;
+    transform: translate3d(5%, 0, 0);
+    
+  }
+      .animated-title3 > div {
+    
+    overflow: visible;
+    
+    
+    
+  }
+      .animated-title3 {
+    width: 100vw;
+    z-index: 0;
+    padding: 5vh;
+    color: #767676;
+    font-family: Julius Sans One;
+    overflow: visible;
+    
+    
+  }
+      #tablet{
+        display: none;
+
+      }
+      #phone{
+        display: none;
+      }
     #macbook{
-      
-      transform: scale(2.5, 2.0);
+      font-size: 1vw;
+      margin-left: -8em;
+     
       
     
     
+    }
     }
     
     .contact{
@@ -959,9 +1010,9 @@ import arrows from '../assets/arrows.png'
     
       z-index: 1;
     color:white;
-    margin-bottom: 12vh;
+    margin-bottom: 5vw;
     
-    font-size: 10vh;  
+    font-size: 6vw;  
   }
   #eight > svg{
     transition: .5s ease;
@@ -1132,7 +1183,7 @@ import arrows from '../assets/arrows.png'
   box-shadow: 14px 14px 40px rgba(16, 16, 18, 0.75), -7px -7px 30px #313131;
   border-radius: 8px;
   width: 7vw;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   height: 60vh;
@@ -1302,7 +1353,7 @@ import arrows from '../assets/arrows.png'
   }
   @keyframes showprograms2 {
     to{
-      width: 27vw;
+      width: 30vw;
     }
   }
   .work{

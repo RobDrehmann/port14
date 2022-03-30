@@ -239,9 +239,7 @@ try {
         <path id="load3" d="M61 214V219H66H90H95V214V100.873L324.128 94.9984L329.685 94.8559L328.957 89.3448C327.789 80.5103 325.297 72.9476 317.782 67.6558C310.767 62.7156 300.092 60.3247 284.416 59.0173L284.208 59H284H66H61V64V214ZM89.8718 91.0016L85 91.1266V96V209H71V69H283.791C299.254 70.3038 307.428 72.5947 312.025 75.8319C315.043 77.9577 316.854 80.7462 318.012 85.1519L89.8718 91.0016ZM61 448V450.553L63.0675 452.05L121.067 494.05L129 499.794V490V325H331.983C345.873 325.096 357.488 323.41 370.066 318.562C382.518 313.764 395.707 305.944 412.841 294.115L413.306 293.793L413.688 293.376C424.186 281.907 432.333 272.055 437.385 259.889C442.471 247.642 444.241 233.519 442.99 213.685L442.922 212.603L442.412 211.647C435.548 198.779 429.326 188.846 421.09 180.061C412.841 171.262 402.78 163.835 388.482 155.659L383.841 153.006L381.503 157.813C355.265 211.769 335.52 236.997 294.058 275H66H61V280V448ZM296 285H297.939L299.371 283.693C341.407 245.324 362.132 219.523 388.117 167.036C399.396 173.82 407.306 179.979 413.794 186.9C420.956 194.54 426.585 203.315 433.075 215.395C434.137 233.75 432.36 245.916 428.15 256.054C423.876 266.346 416.92 275.009 406.693 286.207C389.974 297.726 377.69 304.907 366.47 309.231C355.278 313.544 344.943 315.09 332.035 315L332.017 315H332H124H119V320V480.206L71 445.447V285H296ZM308 385H293.406L304.934 393.95L456.934 511.95L465 518.211V508V478V475.624L463.158 474.124L355.158 386.124L353.779 385H352H308ZM158 155H153V160V214V219H158H264H266.376L267.876 217.158L311.876 163.158L318.524 155H308H158ZM455 497.789L322.594 395H350.221L455 480.376V497.789ZM163 165H297.476L261.624 209H163V165ZM188.991 385.993L181 380.028V390V617.544L5 475.609V64V5H263.634L330.603 14.8483C350.616 23.7135 362.691 33.6439 371.726 46.3525C381.012 59.414 387.283 75.6471 395.301 97.708L395.936 99.4545L397.557 100.363L447.244 128.187C447.323 128.249 447.421 128.325 447.537 128.416C447.915 128.714 448.484 129.169 449.215 129.775C450.678 130.988 452.791 132.805 455.336 135.184C460.432 139.947 467.235 146.932 474.033 155.793C487.673 173.575 501 198.52 501 228C501 257.211 482.459 289.053 463.043 314.194C453.437 326.632 443.82 337.175 436.6 344.611C432.993 348.326 429.992 351.257 427.9 353.254C426.854 354.252 426.036 355.016 425.483 355.526C425.207 355.782 424.997 355.974 424.858 356.1C424.789 356.163 424.737 356.21 424.704 356.239L424.668 356.272L424.661 356.278L424.66 356.279L424.66 356.279L420.558 359.961L424.621 363.686L519 450.199V553.691L469.794 595.607L188.991 385.993Z" stroke="#AD00FF" stroke-width="10"/>
         </svg>
     </div>
-    <div on:click={handleback} id="backbutton">
-    <img src={arrows}  />
-    </div>
+    
     <div class="navbar" style={` transform: translateX(${navleft}vw);`}>
     <div class="cover"></div>
       <div on:click={handlenav} class="navbar-open">
@@ -268,7 +266,7 @@ try {
     </div>
     <div  class="home">
     <div class="title">
-      <div class="animated-title">
+      <div id="RDtitle" class="animated-title">
         <div class="text-top">
           <div>
             <span>Rob</span>
@@ -281,33 +279,32 @@ try {
       </div>
       
       
-      <h1>Rob Drehmann</h1>
-      <h2>Computer Science Student</h2>
+      
     </div>
     <div class="shapes">
-    <svg style={`margin: ${0}em ${-40}em; transform: translateX(${(m.x*-4)/100}px) translateY(${(m.y*4)/100}px);`} width="56" height="54" viewBox="0 0 56 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M2 2V40.1443M2 2H43.8261M2 2L9.91304 12.3093M2 40.1443H43.8261M2 40.1443L9.91304 52M43.8261 40.1443V2M43.8261 40.1443L54 52M43.8261 2L54 12.3093M54 12.3093V52M54 12.3093H9.91304M54 52H9.91304M9.91304 52V12.3093" stroke="#00C2FF" stroke-width="3"/>
+    <svg style={`margin: ${-15}rem ${30}rem; transform: translateX(${(m.x*-4)/100}px) translateY(${(m.y*4)/100}px);`} width="56" height="54" viewBox="0 0 56 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 2V40.1443M2 2H43.8261M2 2L9.91304 12.3093M2 40.1443H43.8261M2 40.1443L9.91304 52M43.8261 40.1443V2M43.8261 40.1443L54 52M43.8261 2L54 12.3093M54 12.3093V52M54 12.3093H9.91304M54 52H9.91304M9.91304 52V12.3093" stroke="#BD00FF" stroke-width="3"/>
       </svg>
-      <svg style={`margin: ${0}em ${35}em; transform: translateX(${(m.x*-4)/100}px) translateY(${(m.y*4)/100}px);`} width="56" height="54" viewBox="0 0 56 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg style={`margin: ${-20}rem ${75}rem; transform: translateX(${(m.x*-4)/100}px) translateY(${(m.y*4)/100}px);`} width="56" height="54" viewBox="0 0 56 54" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M2 2V40.1443M2 2H43.8261M2 2L9.91304 12.3093M2 40.1443H43.8261M2 40.1443L9.91304 52M43.8261 40.1443V2M43.8261 40.1443L54 52M43.8261 2L54 12.3093M54 12.3093V52M54 12.3093H9.91304M54 52H9.91304M9.91304 52V12.3093" stroke="#00C2FF" stroke-width="3"/>
         </svg>
-      <svg style={`margin: ${5}em ${-10}em; transform: translateX(${(m.x*9)/100}px) translateY(${(m.y*9)/100}px);`} width="56" height="54" viewBox="0 0 56 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg style={`margin: ${10}rem ${60}rem; transform: translateX(${(m.x*9)/100}px) translateY(${(m.y*9)/100}px);`} width="56" height="54" viewBox="0 0 56 54" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M2 2V40.1443M2 2H43.8261M2 2L9.91304 12.3093M2 40.1443H43.8261M2 40.1443L9.91304 52M43.8261 40.1443V2M43.8261 40.1443L54 52M43.8261 2L54 12.3093M54 12.3093V52M54 12.3093H9.91304M54 52H9.91304M9.91304 52V12.3093" stroke="#00FFD1" stroke-width="3"/>
         </svg>
-        <svg style={`margin: ${36}em ${30}em; transform: translateX(${(m.x*-11)/100}px) translateY(${(m.y*11)/100}px);`} width="56" height="54" viewBox="0 0 56 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M2 2V40.1443M2 2H43.8261M2 2L9.91304 12.3093M2 40.1443H43.8261M2 40.1443L9.91304 52M43.8261 40.1443V2M43.8261 40.1443L54 52M43.8261 2L54 12.3093M54 12.3093V52M54 12.3093H9.91304M54 52H9.91304M9.91304 52V12.3093" stroke="#BD00FF" stroke-width="3"/>
+        <svg style={`margin: ${10}rem ${20}rem; transform: translateX(${(m.x*-11)/100}px) translateY(${(m.y*11)/100}px);`} width="56" height="54" viewBox="0 0 56 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2 2V40.1443M2 2H43.8261M2 2L9.91304 12.3093M2 40.1443H43.8261M2 40.1443L9.91304 52M43.8261 40.1443V2M43.8261 40.1443L54 52M43.8261 2L54 12.3093M54 12.3093V52M54 12.3093H9.91304M54 52H9.91304M9.91304 52V12.3093" stroke="#00C2FF" stroke-width="3"/>
           </svg>
-          <svg style={`margin: ${30}em ${-10}em; transform: translateX(${(m.x*4)/100}px) translateY(${(m.y*4)/100}px);`} width="67" height="54" viewBox="0 0 67 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 52H52.6M3 52L28.6857 8.25M3 52L18.9429 42.1786M52.6 52L28.6857 8.25M52.6 52L65 42.1786M28.6857 8.25L41.9714 2M18.9429 42.1786L41.9714 2M18.9429 42.1786H65M41.9714 2L65 42.1786" stroke="#00C2FF" stroke-width="3"/>
+          <svg style={`margin: ${-20}rem ${-5}rem; transform: translateX(${(m.x*4)/100}px) translateY(${(m.y*4)/100}px);`} width="67" height="54" viewBox="0 0 67 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 52H52.6M3 52L28.6857 8.25M3 52L18.9429 42.1786M52.6 52L28.6857 8.25M52.6 52L65 42.1786M28.6857 8.25L41.9714 2M18.9429 42.1786L41.9714 2M18.9429 42.1786H65M41.9714 2L65 42.1786" stroke="#00FFD1" stroke-width="3"/>
             </svg>
-            <svg style={`margin: ${37}em ${-40}em; transform: translateX(${(m.x*7)/100}px) translateY(${(m.y*-7)/100}px);`} width="67" height="54" viewBox="0 0 67 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 52H52.6M3 52L28.6857 8.25M3 52L18.9429 42.1786M52.6 52L28.6857 8.25M52.6 52L65 42.1786M28.6857 8.25L41.9714 2M18.9429 42.1786L41.9714 2M18.9429 42.1786H65M41.9714 2L65 42.1786" stroke="#00FFD1" stroke-width="3"/>
+            <svg style={`margin: ${15}rem ${-5}rem; transform: translateX(${(m.x*7)/100}px) translateY(${(m.y*-7)/100}px);`} width="67" height="54" viewBox="0 0 67 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 52H52.6M3 52L28.6857 8.25M3 52L18.9429 42.1786M52.6 52L28.6857 8.25M52.6 52L65 42.1786M28.6857 8.25L41.9714 2M18.9429 42.1786L41.9714 2M18.9429 42.1786H65M41.9714 2L65 42.1786" stroke="#BD00FF" stroke-width="3"/>
               </svg>
-              <svg style={`margin: ${1}em ${-20}em; transform: translateX(${(m.x*-7)/100}px) translateY(${(m.y*-7)/100}px);`}  width="67" height="54" viewBox="0 0 67 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 52H52.6M3 52L28.6857 8.25M3 52L18.9429 42.1786M52.6 52L28.6857 8.25M52.6 52L65 42.1786M28.6857 8.25L41.9714 2M18.9429 42.1786L41.9714 2M18.9429 42.1786H65M41.9714 2L65 42.1786" stroke="#BD00FF" stroke-width="3"/>
+              <svg style={`margin: ${20}rem ${40}rem; transform: translateX(${(m.x*-7)/100}px) translateY(${(m.y*-7)/100}px);`}  width="67" height="54" viewBox="0 0 67 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 52H52.6M3 52L28.6857 8.25M3 52L18.9429 42.1786M52.6 52L28.6857 8.25M52.6 52L65 42.1786M28.6857 8.25L41.9714 2M18.9429 42.1786L41.9714 2M18.9429 42.1786H65M41.9714 2L65 42.1786" stroke="#00C2FF" stroke-width="3"/>
                 </svg>
               </div>                    
-    <svg width="528" height="630"  style={`transform: translate(${m.x/50}px) translateY(${m.y/50}px);`} viewBox="0 0 528 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg id="RD" width="528" height="630"  style={`transform: translate(${m.x/50}px) translateY(${m.y/50}px);`} viewBox="0 0 528 630" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path id="logo1" d="M349.216 341.646L480 450.893V527.769L457.451 548L190.659 344.541M349.216 341.646L190.659 344.541M349.216 341.646C349.216 341.646 472.705 297.138 457.451 204.077C442.197 111.015 349.216 111.015 349.216 111.015M190.659 344.541L186.863 341.646H141.765V548L20 450.893V236.446M20 236.446V22C47.0588 22 190.659 22 272.549 22C354.439 22.0001 352.427 76.7843 349.216 111.015M20 236.446H272.549C272.549 236.446 343.445 172.524 349.216 111.015M349.216 111.015H110.196V204.077" stroke="white" stroke-opacity="0.5" stroke-width="38"/>
       <path  id="logo2" d="M363.216 353.646L494 462.893V539.769L471.451 560L204.659 356.541M363.216 353.646L204.659 356.541M363.216 353.646C363.216 353.646 486.705 309.138 471.451 216.077C456.197 123.015 363.216 123.015 363.216 123.015M204.659 356.541L200.863 353.646H155.765V560L34 462.893V248.446M34 248.446V34C61.0588 34 204.659 34 286.549 34C368.439 34.0001 366.427 88.7843 363.216 123.015M34 248.446H286.549C286.549 248.446 357.445 184.524 363.216 123.015M363.216 123.015H124.196V216.077" stroke="white" stroke-opacity="0.5" stroke-width="67"/>
       <path id="logo3" d="M363.216 353.646L494 462.893V539.769L471.451 560L204.659 356.541M363.216 353.646L204.659 356.541M363.216 353.646C363.216 353.646 486.705 309.138 471.451 216.077C456.197 123.015 363.216 123.015 363.216 123.015M204.659 356.541L200.863 353.646H155.765V560L34 462.893V248.446M34 248.446V34C61.0588 34 204.659 34 286.549 34C368.439 34.0001 366.427 88.7843 363.216 123.015M34 248.446H286.549C286.549 248.446 357.445 184.524 363.216 123.015M363.216 123.015H124.196V216.077" stroke="url(#paint0_linear_6161_858)" stroke-opacity="0.2" stroke-width="67"/>
@@ -626,6 +623,8 @@ try {
     <div id="coverprogram2" class="coverprogram"></div>
     {/if}
     <div class="contact">
+      <h4 id="bgprograms">Contact</h4>
+
       <h2 >Name:</h2>
       <input bind:value={name}/>
       <h2 >Email:</h2>
@@ -648,6 +647,194 @@ try {
   <svelte:window use:wheel={{scrollable}} bind:scrollY={y} />
   
   <style lang="scss">
+   
+    @media only screen and (orientation: portrait) {
+      #projecttitle{
+    position: static;
+    z-index: 0;
+    height: 50vh;
+
+    margin-top: 0px;
+    
+    transform: translate(30%, 0%);
+    
+  }
+
+      .projectcard > h3{
+      transition: 1s;
+      margin-top:-8em;
+      font-size: 7vw;
+      padding-left: 0%;
+      height: 0px;
+      background-color: grey;
+      overflow: hidden;
+      opacity: 1;
+      z-index: 3;
+
+    }
+    .projectcard:hover > h3{
+      transition: 1s;
+
+      margin-top:-8em;
+      padding-top: 20%;
+      font-size: 7vw;
+      padding-left: 40%;
+      height: 50%;
+      overflow: hidden;
+    }
+      .animated-title {
+    z-index: 0;
+  
+    color: #767676;
+    font-family: Julius Sans One;
+    height: 50vh;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vw;
+  }
+      .projectcard{
+
+  height: 60vw;
+  width: 97vw;
+  border-radius: 11px;
+  margin-right: -90em;
+  margin-left: 7vw;
+ 
+   }
+  .shapes {
+    display: none;
+  }
+  .home{
+    flex-direction: column-reverse;
+  }
+  #RD{
+    height: 30vh;
+    width: 30vh;
+    font-size: 1vw;
+    margin-left: -5em;
+   margin-bottom: 50vh;
+   
+    
+  }
+  .title{
+    
+  }
+  .workall{
+      
+      margin-top: 2.5vw;
+      width: 300vw;
+      margin-bottom: 2.5vw
+      
+  
+    }
+  
+  .seperator{
+    margin-top: 0vh;
+
+  }
+  .work{
+    text-align: left;
+   
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: top;
+    width: 100vw;
+    
+    
+  }
+  #RDtitle{
+    left: 50%;
+    top: 60%
+  }
+}
+@media only screen and (orientation: landscape) {
+  #projecttitle{
+    position: static;
+    z-index: 0;
+    height: 50vh;
+    left: 0%;
+    margin-top: 0px;
+    
+    transform: translate(0%, 0%);
+  }
+  .projectcard > h3{
+      transition: 1s;
+      margin-top:-4em;
+      font-size: 7vw;
+      padding-left: 0%;
+      height: 0px;
+      background-color: grey;
+      overflow: hidden;
+      opacity: 1;
+      z-index: 3;
+
+    }
+    .projectcard:hover > h3{
+      transition: 1s;
+
+      margin-top:-4em;
+      padding-top: 15%;
+      font-size: 7vw;
+      padding-left: 32%;
+      height: 65%;
+      overflow: hidden;
+    }
+  .animated-title {
+    z-index: 0;
+  
+    color: #767676;
+    font-family: Julius Sans One;
+    height: 50vh;
+    left: 30%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vmin;
+  }
+  .projectcard{
+   
+  height: 30vw;
+  width: 50vw;
+  border-radius: 11px;
+  margin-right: -90em;
+  margin-left: 7vw;
+
+    
+  
+   }
+  #RD{
+    height: 40vw;
+    width: 40vw;
+    margin-left: 50vw;
+    margin-right: 2vw;
+   
+    
+  }
+  .work{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: top;
+    width: 100vw;
+    
+    
+  }
+  .workall{
+      
+      margin-top: 5vw;
+      width: 300vw;
+      height:50vh;
+  
+    }
+  .seperator{
+    margin-top: 8vh;
+  }
+  
+}
+
     .projectcard > img{
       height: 100%;
       width: 100%;
@@ -681,28 +868,7 @@ try {
       
     }
     
-    .projectcard > h3{
-      transition: 1s;
-      margin-top:-4em;
-      font-size: 7vw;
-      padding-left: 0%;
-      height: 0px;
-      background-color: grey;
-      overflow: hidden;
-      opacity: 1;
-      z-index: 3;
-
-    }
-    .projectcard:hover > h3{
-      transition: 1s;
-
-      margin-top:-4em;
-      padding-top: 15%;
-      font-size: 7vw;
-      padding-left: 32%;
-      height: 65%;
-      overflow: hidden;
-    }
+    
     .transparent{
       color: transparent;
     }
@@ -908,6 +1074,7 @@ try {
       color: white;
       align-self: left;
       margin-left: 5vw;
+      font-size: 2vw
     }
     #phone{
       transform: scale(1, 1.1);
@@ -961,7 +1128,7 @@ try {
     }
     .contact> input{
       font-family: monospace;
-  
+      z-index: 1;
       font-size: 3vh;
       color: white;
       align-self: center;
@@ -1001,7 +1168,8 @@ try {
     .contact > button{
     width: 10vw;
     height: 5vh;
-    font-size: 3vh;
+    font-size: 2vw;
+
   }
   .contact > button:hover{
     background-color: white;
@@ -1080,18 +1248,18 @@ try {
       transform: translate(-50%);
       font-family: Julius Sans One;
       position: absolute;
-      font-size: 20vh;
+      font-size: 15vw;
       color: grey;
       z-index: 0;
       opacity: .3;
     }
     #bgprograms{
       margin-left: 50%;
-      margin-top:  5%;
+      margin-top: -.3em;
       transform: translate(-50%);
       font-family: Julius Sans One;
       position: absolute;
-      font-size: 20vh;
+      font-size: 15vw;
       color: grey;
       z-index: 0;
       opacity: .3;
@@ -1100,8 +1268,8 @@ try {
       z-index: 1;
       background: #313131;
   box-shadow: 14px 14px 40px rgba(16, 16, 18, 0.75), -7px -7px 30px #313131;
-  height: 40vh;
-  width: 40vw;
+  height: 25vw;
+  width: 45vw;
   border-radius: 11px;
   
   transition: 1s ease;
@@ -1112,13 +1280,7 @@ try {
       margin-top: 5vh;
       background-color: transparent;
     }
-    .workall{
-      
-      margin-top: 5vw;
-      width: 300vw;
-      height:50vh;
-  
-    }
+    
     #projectcard2{
       animation: cardmove2 1s ease;
      animation-fill-mode: forwards;
@@ -1142,11 +1304,10 @@ try {
     z-index: 1;
     background: #313131;
   box-shadow: 14px 14px 40px rgba(16, 16, 18, 0.75), -7px -7px 30px #313131;
-  height: 50vh;
-  width: 50vw;
+  
   border-radius: 11px;
   margin-right: -90em;
-  margin-left: 90em;
+  margin-left: 7vw;
   transition: 1s ease;
     animation: cardmove 1s ease;
     animation-fill-mode: forwards;
@@ -1317,12 +1478,16 @@ try {
   @keyframes movepage{
     to{
       left: -100vw;
+      opacity: 0;
+      
     }
     
   }
   @keyframes move{
     to{
       left: 100vw;
+      opacity: 0;
+      
     }
     
   }
@@ -1391,7 +1556,7 @@ try {
     width:0vw;
     background: white;
     height: 2vh;
-    margin-top: 8vh;
+   
     margin-left: -1.5em;
     animation: sepera 3s ease;
     animation-delay: 4.5s;
@@ -1425,8 +1590,8 @@ try {
   .title{
     text-align: left;
     align-self: center;
-    margin-left: 10vw;
-    margin-right: 5vw;
+    margin-left: 7vw;
+    
   }
   svg{
     
@@ -1436,6 +1601,13 @@ try {
     animation-delay: 6.3s;
     animation-fill-mode: forwards;
     display: hidden;
+    
+  }
+  
+  .home{
+    display: flex;
+    height: 80vh;
+    align-items: center;
   }
     .title > h1 {
       animation: showTopText 1s;
@@ -1444,7 +1616,7 @@ try {
       
   -webkit-text-fill-color: transparent;
   font-family: Julius Sans One;
-      font-size: 4rem;
+      font-size: 1vh;
       font-weight: 1;
       line-height: 1.1;
       
@@ -1455,14 +1627,7 @@ try {
   -webkit-text-fill-color: transparent;
   font-family: Julius Sans One;
     }
-    .home{
-      display:flex;
-      overflow: visible;
-      height: 80vh;
-      margin-top: 5vh;
-     
-  
-    }
+    
   
     p {
       max-width: 14rem;
@@ -1470,6 +1635,7 @@ try {
       line-height: 1.35;
     }
   .navbar{
+    
     z-index: 10;
     top: 13%;
     position: fixed;
@@ -1477,12 +1643,12 @@ try {
   box-shadow: 14px 14px 40px rgba(16, 16, 18, 0.75), -7px -7px 30px #313131;
   border-radius: 8px;
   width: 7vw;
-  display: flex;
-  flex-direction: column;
+  display: none;
+    flex-direction: column;
   align-items: center;
   height: 40vh;
   justify-content: space-evenly;
-  margin-left: -7em;
+  margin-left: -7rem;
   
   }
   .navbar > .navbar-icon{
@@ -1490,7 +1656,7 @@ try {
     
   }
   .navbar-icons{
-    margin-top: -2em;
+    margin-top: -2rem;
     height: 40vh;
     display: flex;
     flex-direction: column;
@@ -1518,7 +1684,7 @@ try {
   #worksheader{
     padding-top: 3vh;
     font-family: Julius Sans One;
-      font-size: 4rem;
+      font-size: 4.7vw;
       background: #08CFBB;
   background: -webkit-linear-gradient(to bottom, #08CFBB 38%, #0685CF 100%);
   background: -moz-linear-gradient(to bottom, #08CFBB 38%, #0685CF 100%);
@@ -1555,11 +1721,13 @@ try {
     }
     .coverprogram{
       z-index: 2;
-      height: 10vh;
+      height: 8vw;
       width: 25vw;
       background-color: white;
       margin-left: 37vw;
-      margin-top: -8em;
+      font-size: 2.1vw;
+      z-index: 1;
+      margin-top: -6em;
       animation: showworks 1s;
       animation-delay: 1s;
       animation-fill-mode: forwards;
@@ -1577,15 +1745,17 @@ try {
     }
     .coverworks{
       z-index: 2;
-      height: 10vh;
+      height: 8vw;
       width: 20vw;
       background-color: white;
       margin-left: 40vw;
-      margin-top: -8em;
+      font-size: 2.1vw;
+      margin-top: -6em;
       animation: showworks 1s;
       animation-delay: 1s;
       animation-fill-mode: forwards;
       margin-bottom: 5vh;
+      z-index: 1;
     }
     .cover{
       margin-top: 5vh;
@@ -1598,6 +1768,9 @@ try {
     }
     .shapes > svg{
       position: absolute;
+      width: 5vw;
+      height: 5vw;
+      
     }
     @media (min-width: 480px) {
       h1 {
@@ -1664,37 +1837,9 @@ try {
       width: 25vw;
     }
   }
-  .work{
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: top;
-    width: 100vw;
-    
-    
-  }
-  #projecttitle{
-    position: static;
-    z-index: 0;
-    height: 50vh;
-    left: 0%;
-    margin-top: 0px;
-    
-    transform: translate(0%, 0%);
-  }
-  .animated-title {
-    z-index: 0;
   
-    color: #767676;
-    font-family: Julius Sans One;
-    height: 50vh;
-    left: 30%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 60vmin;
-  }
+  
+  
   .animated-title > div {
     height: 50%;
     overflow: hidden;
